@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "vitest run"
+    "test": "vitest run",
+    "typecheck": "next typegen && tsc --noEmit",
+    "lighthouse": "lhci autorun"
   },
   "dependencies": {
     "framer-motion": "^13.3.0",
@@ -17,6 +19,7 @@
     "react-dom": "19.2.8"
   },
   "devDependencies": {
+    "@lhci/cli": "^0.16.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
