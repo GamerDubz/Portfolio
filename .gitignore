@@ -42,3 +42,11 @@ next-env.d.ts
 
 # Lighthouse CI local results
 .lighthouseci/
+
+# local agent tooling and build artifacts - not application source
+.claude/
+.agents/
+.codex/
+.opencode/
+.playwright-mcp/
+artifacts/
